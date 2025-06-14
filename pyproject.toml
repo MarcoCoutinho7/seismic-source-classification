@@ -1,22 +1,30 @@
-[project]
-name = "sesmic-source-classification"
+[tool.poetry]
+name = "seismic-source-classification"
 version = "0.1.0"
-description = "Master thesis, This project aims to develop machine learning models that can classify seismic events in DAS data, with a focus on avalanche detection in northern Norway."
-authors = [
-    {name = "Your Name",email = "you@example.com"}
-]
+description = "Master thesis: Develop ML models to classify seismic events in DAS data, focusing on avalanche detection in northern Norway."
+authors = ["Marco Coutinho <your@email.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "numpy (>=2.3.0,<3.0.0)",
-    "jupyter (>=1.1.1,<2.0.0)",
-    "scikit-learn (>=1.7.0,<2.0.0)",
-    "pywavelets (>=1.8.0,<2.0.0)",
-    "matplotlib (>=3.10.3,<4.0.0)",
-    "torch (>=2.7.1,<3.0.0)"
-]
+license = "MIT"
 
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26"
+jupyter = "^1.0"
+scikit-learn = "^1.4"
+pywavelets = "^1.4"
+matplotlib = "^3.8"
+torch = "^2.2"
+librosa = "^0.11.0"
+scipy = "^1.15.3"
+soundfile = "^0.13.1"
+ipywidgets = "^8.1.7"
+seaborn = "^0.13.2"
+tqdm = "^4.67.1"
+pandas = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
