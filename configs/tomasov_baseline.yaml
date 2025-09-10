@@ -1,0 +1,7 @@
+dataset: tomasov
+window_size: 8192
+hop_size: 2048
+model: cnn_lstm
+learning_rate: 0.001
+batch_size: 32
+epochs: 50
