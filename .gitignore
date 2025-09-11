@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Data directories
+data/raw/tomasov/data/
+
 # C extensions
 *.so
 
